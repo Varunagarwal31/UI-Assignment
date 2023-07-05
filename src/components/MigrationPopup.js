@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './MigrationPopup.css'; // Import custom CSS file for additional styling
+import './MigrationPopup.css';
 import { VscCheck } from "react-icons/vsc";
 import Footer from './Footer';
 import './Footer.css'
