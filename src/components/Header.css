@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .imageIcon{
+    background: gray;
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 30px;
+  }
+
+  header{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .icons {
+      margin-left: auto;
+    }
+  }
+  

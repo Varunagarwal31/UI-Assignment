@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 84vh;
+  }
+  
+  .start-button {
+    margin-bottom: 10px;
+  }
+  .popupContent{
+    font-weight: bold;
+  }
+  
+  .offcanvas-popup {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    transition: transform 0.3s;
+    transform: translateY(100%);
+  }
+  
+  .offcanvas-popup.active {
+    transform: translateY(0);
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: rgb(51, 122, 228);
+    width: 0;
+    transition: width 0.3s;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 5px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .toggle-button {
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .alert {
+    margin-top: 10px;
+    padding: 10px;
+    /* background-color: #f2f2f2;
+    color: #333; */
+    font-weight: bold;
+    display: flex;
+    background: green;
+    color: #fff;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+  }
+
+  .arrow-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-top: 4px solid #333;
+    border-right: 4px solid #333;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+  }
+  
+  .arrow-icon.up {
+    transform: rotate(-135deg);
+  }
+  
+  .arrow-icon.down {
+    transform: rotate(45deg);
+  }
+
+  .iconClass{
+    font-size: 30px;
+  }
+  .contentClass{
+    display: flex;
+    padding: 0px 10px;
+    flex-direction: column;
+  }
+
+  .close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    color: white;
+  }

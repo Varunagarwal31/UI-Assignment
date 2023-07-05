@@ -1,0 +1,78 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    height: 70px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 18px;
+  }
+  
+  .middle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 5px;
+  }
+  
+  .arrow-button {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .progress-bar {
+    background-color: #f0f0f0;
+    height: 20px;
+    margin-top: 10px;
+    /* Progress bar styles */
+  }
+  
+  /* Additional styles for the arrow icon */
+  .fa-chevron-up,
+  .fa-chevron-down {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-chevron-up {
+    transform: rotate(-180deg);
+  }
+  
+  .arrowUp, .arrowDown{
+    font-size: 30px;
+    border: 2px solid #0b5ed7;
+    position: absolute;
+    right: 0;
+    bottom: 63px;
+    padding: 0px 10px;
+    background: #0b5ed7;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width:767px) {
+  .logo,  .middle{
+    width: 50%;
+  }
+  .version{
+    display: none;
+  }
+}
